@@ -1,0 +1,21 @@
+:root{
+    --my-box-blu: #1289b2;
+    --my-box-green: #08d6a0;
+    --my-box-ylw: #FFD166;
+    --my-box-purple: #f0466f;
+
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif
+}
+.wrapper{
+    background-color: #083b4b;
+}
