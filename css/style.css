@@ -26,7 +26,16 @@ body{
 .box{
     width: calc(100% / 7 - 30px);
     height: 150px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    transition: all 0.5s;
+}
+.box:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 0 3px white;
 }
 .box-blue{
     background-color: var(--my-box-blu);

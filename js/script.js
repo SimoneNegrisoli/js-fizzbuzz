@@ -24,7 +24,7 @@ const buzz = 'Buzz';
 
 // dove lo voglio mettere
 const boxEl = document.getElementById('boxcontainer');
-let valore = "";
+let valore;
 let boxColor = 'box';
 
 
@@ -38,22 +38,22 @@ for(let i = 1; i <=100; i++){
         boxColor = 'box-purple'
 
     } else if (i % 3 === 0) {
-        output = 'Fizz';
+        valore = 'Fizz';
         boxColor = 'box-green';
 
     } else if (i % 5 === 0) {
-        output = 'Buzz';
+        valore = 'Buzz';
         boxColor = 'box-ywl';
         
     } else {
-        output = i;
+        valore = i;
         boxColor = 'box-blue'
     }
 
     const squareBox = document.createElement("div");
     squareBox.className = `box ${boxColor}`;
-    squareBox.textContent = output;
-    
+    squareBox.textContent = valore;
+
     boxEl.append(squareBox);
 
 }
