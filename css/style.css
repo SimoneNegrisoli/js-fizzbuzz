@@ -6,8 +6,6 @@
 
 }
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -18,4 +16,27 @@ body{
 }
 .wrapper{
     background-color: #083b4b;
+}
+
+#boxcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.box{
+    width: calc(100% / 7 - 30px);
+    height: 150px;
+
+}
+.box-blue{
+    background-color: var(--my-box-blu);
+}
+.box-green{
+    background-color: var(--my-box-green);
+}
+.box-ywl{
+    background-color: var(--my-box-ylw);
+}
+.box-purple{
+    background-color: var(--my-box-purple);
 }
