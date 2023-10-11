@@ -24,16 +24,18 @@ const buzz = 'Buzz';
 
 // dove lo voglio mettere
 const boxEl = document.getElementById('boxcontainer');
-let valore;
-let boxColor = 'box';
+
+
+
 
 
 // Ciclo da 1 a 100
+for (let i = 1; i <= 100; i++) {
 
+    let valore;
+    let boxColor = 'box';
 
-for(let i = 1; i <=100; i++){
-
-    if (i % 3 === 0 && i % 5 === 0){
+    if (i % 3 === 0 && i % 5 === 0) {
         valore = fizz + buzz;
         boxColor = 'box-purple'
 
@@ -44,7 +46,7 @@ for(let i = 1; i <=100; i++){
     } else if (i % 5 === 0) {
         valore = 'Buzz';
         boxColor = 'box-ywl';
-        
+
     } else {
         valore = i;
         boxColor = 'box-blue'
